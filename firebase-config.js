@@ -1,19 +1,19 @@
 // Mengimpor fungsi Firebase langsung melalui CDN
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-analytics.js";
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 // =====================================================================
 // 1. KONFIGURASI FIREBASE
 // =====================================================================
 const firebaseConfig = {
-  apiKey: "AIzaSyC-dHBibhhC5nPHwGcFay2gSYa0Yrr4OjA",
-  authDomain: "jlc-cat-2026.firebaseapp.com",
-  projectId: "jlc-cat-2026",
-  storageBucket: "jlc-cat-2026.firebasestorage.app",
-  messagingSenderId: "1012795910879",
-  appId: "1:1012795910879:web:18bee42b3f1b820cf0576a",
-  measurementId: "G-DMYZ02L220"
+  apiKey: "AIzaSyCewzjM52qap4v4fQy59imWkisUG7cpfPY",
+  authDomain: "jlc-tkp.firebaseapp.com",
+  projectId: "jlc-tkp",
+  storageBucket: "jlc-tkp.firebasestorage.app",
+  messagingSenderId: "878608587211",
+  appId: "1:878608587211:web:aef10911f594d8f48a7e4e",
+  measurementId: "G-N3VP5795NN"
 };
 
 // Koleksi khusus Latihan TKP (terpisah dari koleksi "hasil_ujian" milik simulasi CAT)
@@ -21,7 +21,7 @@ const NAMA_KOLEKSI = "hasil_latihan_tkp";
 
 // Opsional: isi dengan URL Web App Google Apps Script untuk pengiriman ganda ke Google Sheets.
 // Kosongkan ("") jika tidak dipakai.
-const GOOGLE_SHEETS_URL = "";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxT-_QfgmjIs3WkXPhHt4wHMAjPVu-cpypSYJzSFNJTauqBLznKoy_u7H5q92oayPf0/exec";
 
 const app = initializeApp(firebaseConfig);
 try { getAnalytics(app); } catch (e) { /* Analytics tidak wajib */ }
